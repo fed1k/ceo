@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTelegramPlane, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import personImg from "../../public/home.png"
-import { CheckCircle, Phone, Mail } from "lucide-react"
+import { CheckCircle, Phone, Mail, AlertCircle } from "lucide-react"
 // import ContactForm from "../components/contactForm"
 
 const Home = () => {
@@ -10,18 +10,18 @@ const Home = () => {
       <div className=" bg-[url(https://portm-html.vercel.app/assets/img/bg/hero_bg_2.svg)] px-5 md:px-20">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 px-2 md:grid-cols-2 gap-8 ">
           <div className="w-full py-6">
-            <h1 className="md:text-3xl text-xl mt-10 font-bold uppercase text-[rgb(181_181_192)]">
+            {/* <h1 className="md:text-3xl text-xl mt-10 font-bold uppercase text-[rgb(181_181_192)]">
               Добрый день!
-            </h1>
-            <p className="font-black text-[75px]"><span className="linear-gradent-firstname">Меня зовут Максим</span>  <span className="cs_gradient_border_text">Водянов</span></p>
+            </h1> */}
+            <p className="font-black text-[75px]"><span className="linear-gradent-firstname">Вас приветствует Максим</span>  <span className="cs_gradient_border_text">Водянов</span></p>
             <div className="person-frame flex relative justify-center bg-[url(https://portm-html.vercel.app/assets/img/bg/hero_bg_3.svg)]">
 
               <img className="rounded-md person-animation w-[80%] h-[80%] lg:hidden my-4" src={personImg} alt="" />
               <div className="absolute flex gap-4 lg:hidden items-center py-2.5 px-4 rounded-[20px] top-1/2 right-0 custom-client-shadow">
-                <p className="text-[#342ead] font-semibold text-4xl">9+</p>
+                <p className="text-[#342ead] font-semibold text-4xl">15</p>
                 <div>
-                  <p className="text-[#12103e] text-lg">Years</p>
-                  <p className="text-[#767682]">Happy Clients</p>
+                  <p className="text-[#12103e] text-lg">Лет</p>
+                  <p className="text-[#767682]">в автобизнесе</p>
                 </div>
               </div>
             </div>
@@ -32,30 +32,22 @@ const Home = () => {
               Максим Водянов – эксперт в подборе персонала для автосервисов, руководитель СТО с реальным опытом. Специализируется на поиске и отборе квалифицированных сотрудников, которые повышают качество сервиса и увеличивают прибыль бизнеса. Обладает глубокими знаниями отрасли, тщательно проверяет каждого кандидата и гарантирует замену, если специалист не подходит.
             </p>
 
-            <div className="flex gap-6 mt-6 text-blue-700 text-xl">
-              <FaFacebookF className="md:text-3xl text-2xl cursor-pointer " />
-              <FaInstagram className="md:text-3xl text-2xl cursor-pointer " />
-              <FaTelegramPlane className="md:text-3xl text-2xl cursor-pointer " />
-              <FaWhatsapp className="md:text-3xl text-2xl cursor-pointer " />
-              <FaYoutube className="md:text-3xl text-2xl cursor-pointer " />
-            </div>
-
             <div className="flex gap-6 pt-10 items-center">
               <button className="md:px-5 font-jost px-3 cursor-pointer md:py-3 py-2 bg-[rgb(255_109_90)] text-white font-semibold text-lg rounded-xl">
-                Оставить заявку
+                Давай обсудим
               </button>
 
-              <a className="text-2xl decoration text-[#342ead] font-semibold font-jost" href="">Давай обсудим</a>
+              {/* <a className="text-2xl decoration text-[#342ead] font-semibold font-jost" href="">Давай обсудим</a> */}
             </div>
 
           </div>
           <div className="hidden lg:flex relative person-frame bg-[url(https://portm-html.vercel.app/assets/img/bg/hero_bg_3.svg)] w-full h-full pt-10 justify-center items-center">
             <img className="rounded-md person-animation w-[400px] h-[600px] object-cover lg:block hidden" src={personImg} alt="" />
             <div className="absolute gap-4 flex items-center py-2.5 px-4 rounded-[20px] top-1/2 right-0 custom-client-shadow">
-              <p className="text-[#342ead] font-semibold text-4xl">9+</p>
+              <p className="text-[#342ead] font-semibold text-4xl">15</p>
               <div>
-                <p className="text-[#12103e] text-lg">Years</p>
-                <p className="text-[#767682]">Happy Clients</p>
+                <p className="text-[#12103e] text-lg">Лет</p>
+                <p className="text-[#767682]">в автобизнесе</p>
               </div>
             </div>
           </div>
@@ -66,36 +58,54 @@ const Home = () => {
       <section id="problems" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6">Ваша проблема:</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ваша проблема:</h2>
+              <div className="h-1 w-20 bg-red-500 mx-auto rounded-full"></div>
+            </div>
             <div className="grid gap-4 md:grid-cols-3">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="text-red-500 text-2xl mb-3">🛑</div>
+              <div className="bg-white flex flex-col items-center p-6 rounded-lg shadow-md">
+                <div className="mb-4 mx-auto p-3 bg-red-50 rounded-full">
+                  <AlertCircle className="h-8 w-8 text-red-500" />
+                </div>
                 <p>Нужны надежные специалисты, но на рынке много непрофессионалов</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="text-red-500 text-2xl mb-3">🛑</div>
+              <div className="bg-white flex flex-col items-center p-6 rounded-lg shadow-md">
+                <div className="mb-4 mx-auto p-3 bg-red-50 rounded-full">
+                  <AlertCircle className="h-8 w-8 text-red-500" />
+                </div>
                 <p>Текучка кадров мешает стабильности бизнеса</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="text-red-500 text-2xl mb-3">🛑</div>
+              <div className="bg-white flex flex-col items-center p-6 rounded-lg shadow-md">
+                <div className="mb-4 mx-auto p-3 bg-red-50 rounded-full">
+                  <AlertCircle className="h-8 w-8 text-red-500" />
+                </div>
                 <p>Поиск сотрудников отнимает слишком много времени</p>
               </div>
             </div>
           </div>
 
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Мое решение:</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Мое решение:</h2>
+              <div className="h-1 w-20 bg-green-500 mx-auto rounded-full"></div>
+            </div>
             <div className="grid gap-4 md:grid-cols-3">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="text-green-500 text-2xl mb-3">✔</div>
+              <div className="bg-white flex items-center flex-col p-6 rounded-lg shadow-md">
+                <div className="mb-4 p-3 bg-green-50 rounded-full">
+                  <CheckCircle className="h-8 w-8 text-green-500" />
+                </div>
                 <p>Я сам из отрасли и знаю, кто вам нужен</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="text-green-500 text-2xl mb-3">✔</div>
+              <div className="bg-white flex items-center flex-col p-6 rounded-lg shadow-md">
+              <div className="mb-4 p-3 bg-green-50 rounded-full">
+                  <CheckCircle className="h-8 w-8 text-green-500" />
+                </div>
                 <p>Отбираю только проверенных специалистов с опытом</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="text-green-500 text-2xl mb-3">✔</div>
+              <div className="bg-white flex flex-col items-center p-6 rounded-lg shadow-md">
+              <div className="mb-4 p-3 bg-green-50 rounded-full">
+                  <CheckCircle className="h-8 w-8 text-green-500" />
+                </div>
                 <p>Гарантирую замену, если кандидат не подойдет</p>
               </div>
             </div>
