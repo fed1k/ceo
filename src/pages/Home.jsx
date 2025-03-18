@@ -28,12 +28,12 @@ const Home = () => {
             <h2 className="md:text-3xl text-xl font-semibold mt-4">
               <span className="purple-color">Консультант по подбору персонала для автосервисов</span>
             </h2>
-            <p className="text-gray-700 mt-4 font-jost text-justify">
+            <p className="text-gray-700 mt-4 text-xl font-jost text-justify">
               Максим Водянов – эксперт в подборе персонала для автосервисов, руководитель СТО с реальным опытом. Специализируется на поиске и отборе квалифицированных сотрудников, которые повышают качество сервиса и увеличивают прибыль бизнеса. Обладает глубокими знаниями отрасли, тщательно проверяет каждого кандидата и гарантирует замену, если специалист не подходит.
             </p>
 
             <div className="flex gap-6 pt-10 items-center">
-              <button className="md:px-5 font-jost px-3 cursor-pointer md:py-3 py-2 bg-[rgb(255_109_90)] text-white font-semibold text-lg rounded-xl">
+              <button className="md:px-5 font-jost px-3 cursor-pointer md:py-3 py-2 bg-[rgb(255_109_90)] text-white font-semibold text-3xl rounded-xl">
                 Давайте обсудим
               </button>
 
