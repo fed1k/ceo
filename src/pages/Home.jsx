@@ -8,25 +8,25 @@ const Home = () => {
   return (
     <>
       <div className=" bg-[url(https://portm-html.vercel.app/assets/img/bg/hero_bg_2.svg)] px-5 md:px-20">
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 px-2 md:grid-cols-2 gap-8 ">
+        <div className="max-w-[1440px] mx-auto hero-custom-mediaquery grid grid-cols-1 px-2 sm:grid-cols-2 gap-8 ">
           <div className="w-full py-6">
             {/* <h1 className="md:text-3xl text-xl mt-10 font-bold uppercase text-[rgb(181_181_192)]">
               Добрый день!
             </h1> */}
-            <p className="font-black text-[75px]"><span className="linear-gradent-firstname">Вас приветствует Максим</span>  <span className="cs_gradient_border_text">Водянов</span></p>
+            <p className="font-black text-[30px] sm:text-[50px]"><span className="linear-gradent-firstname"><span className=" text-nowrap">Вас приветствует</span>  Максим</span>  <span className="cs_gradient_border_text">Водянов</span></p>
             <div className="person-frame flex relative justify-center bg-[url(https://portm-html.vercel.app/assets/img/bg/hero_bg_3.svg)]">
 
-              <img className="rounded-md person-animation w-[80%] h-[80%] lg:hidden my-4" src={personImg} alt="" />
-              <div className="absolute flex gap-4 lg:hidden items-center py-2.5 px-4 rounded-[20px] top-1/2 right-0 custom-client-shadow">
-                <p className="text-[#342ead] font-semibold text-4xl">15</p>
-                <div>
+              <img className="rounded-md person-animation w-[80%] h-[80%] sm:hidden my-4" src={personImg} alt="" />
+              <div className="absolute flex gap-4 sm:hidden items-center py-2.5 px-4 rounded-[20px] top-1/2 right-0 custom-client-shadow">
+                <p className="purple-color font-semibold text-xl">15 Лет в автобизнесе</p>
+                {/* <div>
                   <p className="text-[#12103e] text-lg">Лет</p>
                   <p className="text-[#767682]">в автобизнесе</p>
-                </div>
+                </div> */}
               </div>
             </div>
             <h2 className="md:text-3xl text-xl font-semibold mt-4">
-              <span className="text-blue-600">Консультант по подбору персонала для автосервисов</span>
+              <span className="purple-color">Консультант по подбору персонала для автосервисов</span>
             </h2>
             <p className="text-gray-700 mt-4 font-jost text-justify">
               Максим Водянов – эксперт в подборе персонала для автосервисов, руководитель СТО с реальным опытом. Специализируется на поиске и отборе квалифицированных сотрудников, которые повышают качество сервиса и увеличивают прибыль бизнеса. Обладает глубокими знаниями отрасли, тщательно проверяет каждого кандидата и гарантирует замену, если специалист не подходит.
@@ -34,21 +34,21 @@ const Home = () => {
 
             <div className="flex gap-6 pt-10 items-center">
               <button className="md:px-5 font-jost px-3 cursor-pointer md:py-3 py-2 bg-[rgb(255_109_90)] text-white font-semibold text-lg rounded-xl">
-                Давай обсудим
+                Давайте обсудим
               </button>
 
               {/* <a className="text-2xl decoration text-[#342ead] font-semibold font-jost" href="">Давай обсудим</a> */}
             </div>
 
           </div>
-          <div className="hidden lg:flex relative person-frame bg-[url(https://portm-html.vercel.app/assets/img/bg/hero_bg_3.svg)] w-full h-full pt-10 justify-center items-center">
-            <img className="rounded-md person-animation w-[400px] h-[600px] object-cover lg:block hidden" src={personImg} alt="" />
+          <div className="hidden sm:flex relative person-frame bg-[url(https://portm-html.vercel.app/assets/img/bg/hero_bg_3.svg)] w-full h-full pt-10 justify-center items-center">
+            <img className="rounded-md person-animation w-[400px] h-[600px] object-cover sm:block hidden" src={personImg} alt="" />
             <div className="absolute gap-4 flex items-center py-2.5 px-4 rounded-[20px] top-1/2 right-0 custom-client-shadow">
-              <p className="text-[#342ead] font-semibold text-4xl">15</p>
-              <div>
+              <p className="purple-color font-semibold text-xl">15 Лет в автобизнесе</p>
+              {/* <div>
                 <p className="text-[#12103e] text-lg">Лет</p>
                 <p className="text-[#767682]">в автобизнесе</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -23,8 +23,10 @@ section * {
 .linear-gradent-firstname {
   background: linear-gradient(147deg, rgb(52, 46, 173) 0%, rgb(255, 109, 90) 100%) text;
   -webkit-text-fill-color: transparent;
+}
 
-  
+.purple-color {
+  color: rgb(255, 109, 90);
 }
 
 .cs_gradient_border_text {
@@ -98,5 +100,14 @@ section * {
 
   100% {
     transform: translateY(10px);
+  }
+}
+
+
+
+@media (min-width: 500px) {
+  .header-text-breakpoint {
+
+    font-size: 54px;
   }
 }
