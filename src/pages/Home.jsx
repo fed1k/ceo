@@ -186,9 +186,9 @@ const Home = () => {
 
       {/* Positions Section */}
       <section id="positions" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 lg:px-16">
           <h2 className="text-3xl font-bold mb-12 text-center">👥 Кого я подбираю?</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="text-2xl mb-3">🔧</div>
               <h3 className="text-xl font-bold mb-2">Автослесарь / Автомеханик</h3>
